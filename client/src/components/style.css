@@ -1,1 +1,157 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
+.cat-footer, .cat-header {
+    text-align: center;
+    background-color: #00a0a6;
+}
+
+.cat-header {
+    margin-bottom: 50px;
+    font-size: 1.65rem;
+}
+
+.footer-wrapper, .header-wrapper, .main-wrapper {
+    margin: auto;
+    width: 80%;
+}
+
+.footer-wrapper, .header-wrapper {
+    padding: 30px;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-family: "Merriweather";
+    font-weight: 300;
+}
+
+h1.cats-header-title {
+    padding: 50px;
+    text-shadow: 4px 3px 0 #1a5162,9px 8px 0 rgba(0,0,0,.15)!important;
+    font-weight: 600;
+    font-family: "Merriweather";
+    color: #aad2d6;
+}
+
+.cats-numbers, .cat-summary .average{
+    color: #aad2d6;
+    text-shadow: 1px 1px #000, -1px -1px #000 !important;
+}
+
+.cat-summary {
+    font-size: 1rem;
+}
+
+.cat-summary .average {
+    display: inline-block;
+    font-size: 26px;
+}
+
+.cat-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    min-height: 100vh;
+    font-size: 1.65rem;
+}
+
+.cat-card {
+    width: 50%;
+    box-shadow: 0 3px 3px 2px #ddd;
+    margin: 15px auto;
+    transition: transform 1s ease;
+}
+
+.cat-card-image {
+    z-index: -1;
+    overflow: hidden;
+    margin: 10% auto;
+    width: 80%;
+    height: 80%;
+}
+
+.cat-card-body {
+    padding: 30px;
+}
+
+.cat-card:hover {
+    box-shadow: 0 0 3px 2px #ccc;
+}
+
+.cat-card-image:hover > img {
+    transform: scale(1.5);
+}
+
+.cat-card-image img {
+    max-width: 100%;
+    min-width: 100%;
+    transition: transform 1s ease;
+}
+img {
+    border-style: none;
+}
+
+.cat-desc {
+    margin: 10px auto;
+}
+
+.cats-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: auto;
+    width: 65%;
+}
+
+.cats-nav > div{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-size: 28px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Calibri';
+    font-weight: 400;
+    transition: margin-right 2s, color 1s;
+}
+
+.cats-nav > div:hover{
+    border: #00a0a6 1px solid;
+    border-radius: 5px;
+    transition: margin-right 2s, color 1s;
+}
+
+.grp-pages{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: 15px auto;
+    flex-wrap: wrap;
+
+}
+
+.grp-pages > span{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.grp-pages > span:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+.page-active{
+    background: #00a0a6;
+}
+
+.page-active::after{
+    content: "";
+    border-bottom: 1px solid black;
+}
