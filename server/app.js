@@ -15,18 +15,11 @@ app.use('/api', require("./routes/users"));
 
 // catch 404 and forward to error handler
 app.use("/*", (req, res, next) => {
-  //console.log(res.url)
   next(createError(404));
 });
 
 async function start(){
   try{
-    /*await mongoose.connect("mongodb+srv://ivan:newpass@cluster0.rl5yg.mongodb.net/BikeRent?retryWrites=true&w=majority",{
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true
-    });*/
-
     app.listen(port, (req, res) =>{
       console.log(`Server has been started on port: ${port}`);
     });
